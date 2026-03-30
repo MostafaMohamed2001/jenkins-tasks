@@ -5,7 +5,8 @@ pipeline {
         stage('Clone Repo') {
             steps {
                 git credentialsId: 'github-creds',
-                    url: 'https://github.com/MostafaMohamed2001/jenkins-tasks'
+                    url: 'https://github.com/MostafaMohamed2001/jenkins-tasks',
+                    branch: 'main'
             }
         }
 
